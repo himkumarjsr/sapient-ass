@@ -1,0 +1,101 @@
+@import '../App.scss';
+
+.tbl {
+    border-radius: 2px;
+    border-collapse: collapse;
+    width: 100%;
+
+    tbody > tr:nth-child(odd) {
+        background: $table-odd-row;
+    }
+
+    tbody > tr:nth-child(even) {
+        background: $table-even-row;
+    }
+
+    td,
+    th {
+        padding: 10px;
+    }
+
+    th {
+        text-align: left;
+        background-color: $orange;
+        color: $white;
+        font-weight: bold;
+    }
+
+}
+
+.greyText {
+    color: $grey;
+    padding-left: 5px;;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.hideTxt {
+    padding: 0 0.5rem;
+    cursor: pointer;
+
+    &::before {
+        content: '[ ';
+    }
+
+    &::after {
+        content: ' ]';
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.pagination {
+    padding: 1.5rem 0;
+    text-align: right;
+    width: 100vw;
+    button {
+        font-weight: 700;
+        color: $orange;
+        background: none;
+        border: none;
+        padding: 0.5rem 1.5rem;
+        cursor: pointer;
+
+        &:disabled {
+            color: $grey;
+        }
+    }
+}
+
+.upVote:hover {
+    cursor: pointer;
+    color: $orange;
+}
+
+.iconSize{
+    width: 20px;
+}
+
+.goodScore{
+    color: $darkRed;
+}
+
+.avgScore{
+    color: $orange;
+}
+
+.badScore{
+    color: $black;
+}
+
+@media only screen and (max-width: 768px) {
+    .tbl {
+        // border-radius: 2px;
+        border-collapse: collapse;
+        width: 100%;
+  }
+}

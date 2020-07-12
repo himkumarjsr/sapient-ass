@@ -1,0 +1,22 @@
+
+$orange: #ff6600;
+$table-odd-row: #f5f5ee;
+$table-even-row: #e4e5de;
+$black: #060f15;
+$grey: #8c8e90;
+$white: #ffffff;
+$darkRed: #790e0e;
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+      font-size: 12px;
+  }
+}

@@ -1,0 +1,9 @@
+@import '../App.scss';
+
+.chart {
+    height: 150px;
+    border-top: 2px solid $orange;
+    border-bottom: 2px solid $orange;
+    padding: 20px 5px 20px 5px;
+    margin-bottom: 30px;
+}
